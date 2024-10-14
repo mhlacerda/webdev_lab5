@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lan="en">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8"> 
-  <title>First Form</title>
+  <meta charset="utf-8">
+  <title>Document</title>
 </head>
 
 <body>
@@ -11,13 +11,15 @@
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
     <fieldset>
       <legend>My Info</legend>
-      <div><label>First Name:<input type="text" name="first_name_field"></label></div>
-      <div><label>Last Name:<input type="text" name="last_name_field"></label></div>
-      <div><label>Phone:<input type="text" name="phone_field"></label></div>
-      <div><label>E-mail:<input type="text" name="email_field"></label></div>
+      <div><label>First Name:<input size="100" type="text" name="first_name_field"></label></div>
+      <div><label>Last Name:<input size="100" type="text" name="last_name_field"></label></div>
+      <div><label>Phone:<input size="100" type="text" name="phone_field"></label></div>
+      <div><label>E-mail:<input size="100" type="text" name="email_field"></label></div>
       <div><label>Gender:</label></div>
+      <div>   
         <label>Male<input type="radio" name="gender_field" value="male"></label>
         <label>Female<input type="radio" name="gender_field" value="female"></label>
+      </div>      
       <div><label>Age:</label></div>
         <select name="age_field">
           <option value="under18">Under 18</option>
@@ -35,7 +37,7 @@
       <div><label>Friday<input type="checkbox" name="available_field[]" value="fri"></label></div>
       <div><label>Saturday<input type="checkbox" name="available_field[]" value="sat"></label></div>
       <h3>Comments:</h3>
-      <textarea name="comments_field" col="30" rows="5"></textarea>
+      <textarea name="comments_field" cols="30" rows="5"></textarea>
     </fieldset>
 
     <input type="submit" value="Submit Query" name="Submit Query">
