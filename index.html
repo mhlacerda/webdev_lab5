@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+  <meta charset="utf-8"> 
+  <title>First Form</title>
+</head>
+
+<body>
+  <h1>Volunteer Form</h1>
+  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+    <fieldset>
+      <legend>My Info</legend>
+      <div><label>First Name:<input type="text" name="first_name_field"></label></div>
+      <div><label>Last Name:<input type="text" name="last_name_field"></label></div>
+      <div><label>Phone:<input type="text" name="phone_field"></label></div>
+      <div><label>E-mail:<input type="text" name="email_field"></label></div>
+      <div><label>Gender:</label></div>
+        <label>Male<input type="radio" name="gender_field" value="male"></label>
+        <label>Female<input type="radio" name="gender_field" value="female"></label>
+      <div><label>Age:</label></div>
+        <select name="age_field">
+          <option value="under18">Under 18</option>
+          <option value="over18">Over 18</option>
+        </select>
+    </fieldset> 
+    <fieldset>
+      <legend>My Availability</legend>
+      <h3>Days Available:</h3>
+      <div><label>Sunday<input type="checkbox" name="available_field[]" value="sunday"></label></div>
+      <div><label>Monday<input type="checkbox" name="available_field[]" value="mon"></label></div>
+      <div><label>Tuesday<input type="checkbox" name="available_field[]" value="tue"></label></div>
+      <div><label>Wednesday<input type="checkbox" name="available_field[]" value="wed"></label></div>
+      <div><label>Thursday<input type="checkbox" name="available_field[]" value="thu"></label></div>
+      <div><label>Friday<input type="checkbox" name="available_field[]" value="fri"></label></div>
+      <div><label>Saturday<input type="checkbox" name="available_field[]" value="sat"></label></div>
+      <h3>Comments:</h3>
+      <textarea name="comments_field" col="30" rows="5"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Submit Query" name="Submit Query">
+    <input type="hidden" value="Manuela Lacerda" name="hidden_field">
+
+  </form>
+
+
+</body>
+</html>
